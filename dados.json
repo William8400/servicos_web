@@ -1,0 +1,13 @@
+{
+    "nome": "William",
+    "idade": 21,
+    "vivo": true,
+    "hobbies": ["Jogar video game","tocar guitarra"],
+
+    "gatos":{
+        "nomes": ["Pandora", "Yuki"],
+        "Raça": "Vira Lata"
+    }
+    
+    
+}
