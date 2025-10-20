@@ -31,7 +31,7 @@ $pacocas['paçocas']['Paçoca de coco']['nutrientes'] = "Cocoativo";
 
 // Salvar dados no arquivo 
 
-file_get_contents('pacoca.json', json_encode($pacocas, JSON_PRETTY_PRINT));
+file_put_contents('pacoca.json', json_encode($pacocas, JSON_PRETTY_PRINT));
 
 
 
