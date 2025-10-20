@@ -33,6 +33,7 @@ function salvar_dados($variavel){
     file_put_contents('pacoca.json', json_encode($variavel, JSON_PRETTY_PRINT));
 }
 
+
 // echo $pacocas['paçocas']['Paçoca de coco']['nome'];
 
 // echo $pacocas['paçocas']['Paçoca de Mel']['nome'];
