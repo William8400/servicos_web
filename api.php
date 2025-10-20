@@ -27,8 +27,7 @@ function cadrastar_pacoca($nome, $tipo, $origem, $nutrientes)
         salvar_dados($pacocas);
     }
 }
-function salvar_dados($variavel)
-{
+function salvar_dados($variavel){
 
     // Salvar dados no arquivo 
     file_put_contents('pacoca.json', json_encode($variavel, JSON_PRETTY_PRINT));
