@@ -12,6 +12,25 @@ header("Access-Control-Allow-Origin: *");
 $pacocas = json_decode(file_get_contents("pacoca.json"), true);
 // echo $pacocas['paçocas']['Paçoca de amendoim']['nome'];
 
+// Saída da API
+// Variável para guardar o que tem na posição enviada pelo link
+$pacoca_especifica = $_GET['pacoca'];
+
+
+switch($pacoca_especifica){
+    
+    case "coco":
+        $pacoca_coco = $pacocas['paçocas']['Paçoca de coco'];
+        echo json_encode($pacocas);
+        break;
+
+    default:
+        echo json_encode($pacocas);
+        break;
+}
+
+
+
 function cadrastar_pacoca($nome, $tipo, $origem, $nutrientes){
 
 
@@ -37,8 +56,3 @@ function salvar_dados($variavel){
 // echo $pacocas['paçocas']['Paçoca de coco']['nome'];
 
 // echo $pacocas['paçocas']['Paçoca de Mel']['nome'];
-
-
-
-// Saída da API
-echo json_encode($pacocas);
