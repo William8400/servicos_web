@@ -3,8 +3,8 @@
 /* Estruturando uma API */
 
 //Cabeçalho da API 
-// header("Content-type: application/json; charset=UTF-8 ");
-// header("Access-Control-Allow-Origin: *");
+header("Content-type: application/json; charset=UTF-8 ");
+header("Access-Control-Allow-Origin: *");
 
 // Serviços do serviço web
 
@@ -12,8 +12,8 @@
 $pacocas = json_decode(file_get_contents("pacoca.json"), true);
 // echo $pacocas['paçocas']['Paçoca de amendoim']['nome'];
 
-function cadrastar_pacoca($nome, $tipo, $origem, $nutrientes)
-{
+function cadrastar_pacoca($nome, $tipo, $origem, $nutrientes){
+
 
     $pacocas['paçocas'][$nome]['nome'] = $nome;
 
@@ -33,10 +33,6 @@ function salvar_dados($variavel){
     file_put_contents('pacoca.json', json_encode($variavel, JSON_PRETTY_PRINT));
 }
 
-
-
-
-
 // echo $pacocas['paçocas']['Paçoca de coco']['nome'];
 
 // echo $pacocas['paçocas']['Paçoca de Mel']['nome'];
@@ -44,5 +40,4 @@ function salvar_dados($variavel){
 
 
 // Saída da API
-
-// echo json_encode($alunos);
+echo json_encode($pacocas);
