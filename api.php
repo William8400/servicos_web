@@ -16,6 +16,8 @@ $pacocas = json_decode(file_get_contents("pacoca.json"), true);
 // Variável para guardar o que tem na posição enviada pelo link
 $pacoca_especifica = $_GET['pacoca'];
 
+$tipo = $_GET['tipo'];
+
 
 switch($pacoca_especifica){
     

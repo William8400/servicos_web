@@ -4,7 +4,7 @@
 
 // Requisição GET através de uma URL (protocolo HTTP)
 
-$url = "http://localhost/servicos-web/api.php?tipo=pacoca=coco";
+$url = "http://localhost/servicos-web/api.php?tipo=pacoca=coco&tipo=doce";
 
 // guardar um valor de resposta da API 
 $resposta = file_get_contents($url);
