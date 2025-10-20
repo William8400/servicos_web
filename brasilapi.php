@@ -1,9 +1,12 @@
 <?php
 
+// Requisição através de uma URL (protocolo HTTP)
 $url = "https://brasilapi.com.br/api/cep/v1/89010025";
 
+// guardar um valor de resposta da API
 $resposta = file_get_contents($url);
 
+//Conversão JSON para um Array associativo 
 $dados = json_decode($resposta, true);
 
 $cep = $dados['cep'];
