@@ -1,0 +1,19 @@
+{
+    "paçocas" :{
+        "Paçoca de amendoim":{
+            "Nome": "Paçoca de amendoim",
+            "Tipo": "Amendoim",
+            "Origem": "brasileira",
+            "Nutrientes": "Paçocativos"
+        },
+
+         "Paçoca de choclate":{
+            "Nome": "Paçoca de Chocolate",
+            "Tipo": "Doce",
+            "Origem": "brasileira",
+            "Nutrientes": "Paçocativos ABC+"
+        }
+        
+        
+    }
+}
