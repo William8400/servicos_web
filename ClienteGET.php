@@ -4,7 +4,7 @@
 
 // De uma url com endpoint para requisitar algum serviço da API 
 
-$url = "http://localhost/servicos-web/apiGET.php";
+$url = "http://localhost/servicos-web/apiGET.php?pacoca=coco";
 
 $resposta = file_get_contents($url);
 
