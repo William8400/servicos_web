@@ -11,22 +11,22 @@ $dados = json_decode($resposta, true);
 
 $cep = $dados['cep'];
 
-$state = $dados['state'];
+$estado = $dados['state'];
 
-$city = $dados['city'];
+$cidade = $dados['city'];
 
-$neighborhood = $dados['neighborhood'];
+$vizinhanca = $dados['neighborhood'];
 
-$street = $dados['street'];
+$rua = $dados['street'];
 
-$service = $dados['service'];
+$servico = $dados['service'];
 
 echo "<h3> CEP: $cep </h3>";
-echo "<h3> Estado: $state </h3>";
-echo "<h3> Cidade: $city </h3>";
-echo "<h3> Vizinhança: $neighborhood </h3>";
-echo "<h3> Rua: $street </h3>";
-echo "<h3> Serviço: $service </h3>";
+echo "<h3> Estado: $estado </h3>";
+echo "<h3> Cidade: $cidade </h3>";
+echo "<h3> Vizinhança: $vizinhanca </h3>";
+echo "<h3> Rua: $rua </h3>";
+echo "<h3> Serviço: $servico </h3>";
 
 
 
