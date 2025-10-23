@@ -10,7 +10,7 @@ $metodo = $_SERVER['REQUEST_METHOD'];
 
 // Sistema API (códigos php)
 
-switch($metodo){
+switch ($metodo) {
 
     case "GET":
         metodoGET();
@@ -23,12 +23,24 @@ switch($metodo){
     default:
         echo "Metódo não identificado";
         break;
-
 }
 
-function metodoGET(){
+function metodoGET()
+{
 
+    $pacocas = json_decode(file_get_contents("pacoca.json"), true);
 
+    $pacoca_especifica = $_GET['pacoca'];
 
+    switch ($pacoca_especifica) {
 
+        case "coco":
+            $pacoca_coco = $pacocas['paçocas']['Paçoca de coco'];
+            echo json_encode($pacoca_coco);
+            break;
+
+        default:
+            echo json_encode($pacocas);
+            break;
+    }
 }
